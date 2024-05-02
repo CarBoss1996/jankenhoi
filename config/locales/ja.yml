@@ -1,0 +1,28 @@
+ja:
+  janken:
+    title: ジャンケンポンであっちむいてほい！
+    submit: はじめる
+    new:
+      title: さいしょは
+      rock: グー
+      paper: パー
+      scissors: チョキ
+    janken:
+      title: じゃんけん
+      rock: グー
+      paper: パー
+      scissors: チョキ
+    saisho:
+      title: さいしょは
+    guu:
+      title: グー
+    aiko:
+      title: あいこで
+    atti:
+      title: あっちむいて
+      ue: うえ
+      sita: した
+      migi: みぎ
+      hidari: ひだり
+    hoi:
+      title: ほい
