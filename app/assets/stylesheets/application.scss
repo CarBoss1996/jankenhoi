@@ -1,0 +1,141 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: asset-url('background.jpg');
+  height: calc(100vh - 134px);
+  position: relative;
+  background-size: cover; /* 画像を背景にフィットさせる */
+  background-repeat: no-repeat; /* 画像を繰り返さない */
+  background-position: center; /* 画像を中央に配置 */
+}
+
+h1 {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  height: 100px;
+  line-height: 600px;
+  font-size: 70px;
+  text-align: center;
+}
+
+.btn-info {
+  position: relative;
+  top: 400px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 80px;
+  display: inline-block; // ボタンをブロックレベル要素にする
+  width: 200px; // ボタンの幅を設定
+  height: 50px; // ボタンの高さを設定
+  line-height: 0px; // テキストをボタンの中央に配置
+  margin: 0 auto; // ボタンを水平方向に中央に配置
+  margin-right: 500px;
+  margin-left: 750px;
+  white-space: nowrap;
+  border-radius: 25px; // ボタンの角を丸くする
+  transition: transform 0.3s ease; // クリックアクションのアニメーションを設定
+
+  &:active { // ボタンが押されたときのスタイル
+    transform: scale(0.95); // ボタンを少し小さくする
+  }
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+  top: 400px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 80px;
+  display: inline-block; // ボタンをブロックレベル要素にする
+  width: 200px; // ボタンの幅を設定
+  height: 50px; // ボタンの高さを設定
+  line-height: 0px; // テキストをボタンの中央に配置
+  margin: 0 auto; // ボタンを水平方向に中央に配置
+  margin-left: 800px;
+  white-space: nowrap;
+  border-radius: 25px; // ボタンの角を丸くする
+  transition: transform 0.3s ease; // クリックアクションのアニメーションを設定
+
+  &:active { // ボタンが押されたときのスタイル
+    transform: scale(0.95); // ボタンを少し小さくする
+  }
+}
+
+.btn-saisho, .btn-guu {
+  margin-top: 0px;
+  margin-right: 500px;
+}
+
+.btn-atti, .btn-shobu, .btn-aiko {
+  font-size: 60px;
+  margin-top: 0px;
+  margin-right: 260px;
+}
+
+.btn-shobu {
+  margin-right: 0px;
+}
+
+footer {
+  position: fixed;
+  font-size: 20px;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 270px;
+  margin-left: -50px;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-image: asset-url('media.png');
+    height: 100vh; // ビューポートの高さに合わせて調整
+  }
+
+  h1 {
+    font-size: 55px; // フォントサイズを小さくする
+    line-height: 100px; // 行の高さを調整する
+    word-wrap: break-word;
+    margin-top: 100px;
+  }
+
+  .btn-info, .btn-group {
+    font-size: 60px; // フォントサイズを小さくする
+    width: 150px; // ボタンの幅を小さくする
+    height: 40px; // ボタンの高さを小さくする
+    margin-right: auto;
+    margin-left: auto; // 左マージンを0にする
+    top: 40px;
+  }
+
+  .btn-guu, .btn-atti, .btn-shobu, .btn-aiko {
+    font-size: 40px;
+    margin: auto; // 右マージンを0にする
+    top: 40px;
+    margin-bottom: 100px;
+  }
+
+  .btn-saisho {
+    top: 250px;
+    margin: auto;
+  }
+}
