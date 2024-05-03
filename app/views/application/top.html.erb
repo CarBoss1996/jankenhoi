@@ -2,8 +2,8 @@
 
 <%= link_to I18n.t('janken.submit'), saisho_path, class: 'btn btn-info btn-saisho',remote: true %>
 
-<footer>
+<div class="x">
   <%= link_to "https://twitter.com/share?url=#{request.original_url}&text=#{I18n.t('janken.title')}", target: "_blank" do %>
     <i class="fab fa-twitter"></i>Xでシェア
   <% end %>
-</footer>
+</div>

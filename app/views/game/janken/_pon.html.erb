@@ -1,5 +1,5 @@
-<h1>あなたの選択: <%= @user_icon&.html_safe %></h1>
-<h1>CPUの選択: <%= @cpu_icon&.html_safe %></h1>
+<div class="choice">あなたの選択: <%= @user_icon&.html_safe %></div>
+<div class="choice">CPUの選択: <%= @cpu_icon&.html_safe %></div>
 
 <% if @user_choice == @cpu_choice %>
   <%= link_to 'あいこ！', aiko_path, method: :post, remote: true, class: 'btn btn-info btn-aiko' %>

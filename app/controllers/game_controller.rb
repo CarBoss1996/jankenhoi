@@ -55,17 +55,6 @@ class GameController < ApplicationController
       format.js
     end
   end
-  #   respond_to do |format|
-  #     format.html do
-  #       if @user_choice == @cpu_choice
-  #         render "game/janken/_aiko"
-  #       else
-  #         render "game/atti/_atti"
-  #       end
-  #     end
-  #     format.js
-  #   end
-  # end
 
   def aiko
     @user_choice = params[:choice]
