@@ -1,4 +1,6 @@
-<h1><%= I18n.t('janken.atti.title')%></h1>
+<h1><div class="saisho">
+  <%= I18n.t('janken.atti.title')%>
+</div></h1>
 
 <div class="btn-group">
 <%= link_to content_tag(:i, '', class: 'fas fa-hand-point-up'), hoi_path(choice: 'ue'), remote: true %>
