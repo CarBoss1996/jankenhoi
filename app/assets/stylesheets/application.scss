@@ -105,6 +105,13 @@ h1 {
   margin-left: -50px;
 }
 
+.choice {
+  font-size: 70px;
+  position: relative;
+  top: 300px;
+  left: 700px;
+}
+
 @media (max-width: 480px) {
   body {
     background-image: asset-url('media.png');
